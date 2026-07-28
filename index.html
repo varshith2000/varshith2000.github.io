@@ -1,189 +1,376 @@
-<!--
-  Message from Brad:
-  Thanks for watching CSS3 in 30 Days! You're awesome.
-  Want more fun design & coding courses? Check out my website.
-
-  https://codecollege.ca
-  (it's free to start)
--->
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <title>CSS3 Fancy Buttons | Code 30 Things in 30 Days with CSS3</title>
-
-    <!-- NORMALIZE CSS -->
-    <link rel="stylesheet" href="../_theme-styles/normalize.css">
-
-    <!-- PROJECT THEME CSS -->
-    <link rel="stylesheet" href="../_theme-styles/theme.css">
-
-    <!-- FINAL PROJECT CSS (use for reference) -->
-    <link rel="stylesheet" href="final.css">
-
-    <!-- SANDBOX CSS (this is your file!) -->
-    <link rel="stylesheet" href="sandbox.css">
-
-<link href="https://fonts.googleapis.com/css?family=Bubblegum+Sans|Nova+Mono|Roboto+Condensed" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Varshith Chennuru — AI Agentic Systems Engineer building production LLM agents, RAG pipelines, foundation models, and enterprise data platforms."
+    />
+    <meta name="author" content="Varshith Chennuru" />
+    <meta property="og:title" content="Varshith Chennuru — AI Agentic Systems Engineer" />
+    <meta
+      property="og:description"
+      content="Production LLM agents, RAG pipelines, foundation-model pretraining, and enterprise data platforms."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://varshith2000.github.io/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>Varshith Chennuru — AI Agentic Systems Engineer</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2316161a'/%3E%3Ctext x='50%25' y='54%25' font-size='34' font-family='Georgia,serif' fill='white' text-anchor='middle' dominant-baseline='middle'%3EV%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1><small>Day #1</small> CSS3 Fancy Buttons</h1>
-
-
-
-    <div class="sandbox">
-      <h2>Sandbox <small>This is where you play</small></h2>
-      <div class="content">
-
-        <p><strong>Instructions:</strong> Use CSS3 to create visually attractive buttons of all different shapes, sizes and effects!</p>
-
-        <section>
-
-          <h4>Facebook Style</h4>
-          <button type="button" name="button" class="facebook-style-btn facebook-style-dark">Button Dark</button>
-
-          <button type="button" name="button" class="facebook-style-btn facebook-style-light">Button Light</button>
-
-        </section>
-
-        <section>
-
-          <h4>3D Buttons</h4>
-          <button type="button" name="button" class="btn-3d-1">3D Button 1</button>
-
-          <button type="button" name="button" class="btn-3d-2">Circle!</button>
-
-        </section>
-
-        <section>
-
-          <h4>Gradient Bordered Buttons</h4>
-          <button type="button" name="button" class="gradient-button-1">Gradient button 1</button>
-          <button type="button" name="button" class="gradient-button-2">Gradient button 2</button>
-
-        </section>
-
-        <section>
-
-          <h4>Animated Buttons</h4>
-
-          <button type="button" name="button" class="animated-button-1">Animated button 1</button>
-          <button type="button" name="button" class="animated-button-2">Animated button 2</button>
-
-        </section>
-
-        <section>
-
-          <h4>Toggle Switch UI Buttons</h4>
-
-          <label for="toggle1" class="toggle-1">
-            <input type="checkbox" id="toggle1" class="toggle-1__input" />
-            <span class="toggle-1__button"></span>
-          </label>
-
-          <label for="toggle2" class="toggle-2">
-            <input type="checkbox" id="toggle2" class="toggle-2__input" />
-            <span class="toggle-2__button">Click me to activate</span>
-          </label>
-        </section>
-
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="#home">Varshith Chennuru</a>
+        <nav aria-label="Primary navigation">
+          <ul class="nav-links">
+            <li><a href="#about">about</a></li>
+            <li><a href="#work">work</a></li>
+            <li><a href="#projects">projects</a></li>
+            <li><a href="#skills">skills</a></li>
+            <li><a href="#contact">contact</a></li>
+          </ul>
+        </nav>
       </div>
-    </div>
+    </header>
 
-    <div class="final-result">
-        <h2>Final Result <small>Use this for reference!</small></h2>
-        <div class="content">
-
-          <section>
-
-            <h4>Facebook Style</h4>
-            <button type="button" name="button" class="final__facebook-style-btn final__facebook-style-dark">Button Dark</button>
-
-            <button type="button" name="button" class="final__facebook-style-btn final__facebook-style-light">Button Light</button>
-
-          </section>
-
-          <section>
-
-            <h4>3D Buttons</h4>
-            <button type="button" name="button" class="final__btn-3d-1">3D Button 1</button>
-
-            <button type="button" name="button" class="final__btn-3d-2">Circle!</button>
-
-          </section>
-
-          <section>
-
-            <h4>Gradient Bordered Buttons</h4>
-            <button type="button" name="button" class="final__gradient-button-1">Gradient button 1</button>
-            <button type="button" name="button" class="final__gradient-button-2">Gradient button 2</button>
-
-          </section>
-
-          <section>
-
-            <h4>Animated Buttons</h4>
-
-            <button type="button" name="button" class="final__animated-button-1">Animated button 1</button>
-            <button type="button" name="button" class="final__animated-button-2">Animated button 2</button>
-
-          </section>
-
-          <section>
-
-            <h4>Toggle Switch UI Buttons</h4>
-
-
-            <label for="final-toggle1" class="final__toggle-1">
-              <input type="checkbox" id="final-toggle1" class="final__toggle-1__input" />
-              <span class="final__toggle-1__button"></span>
-            </label>
-
-            <label for="final-toggle2" class="final__toggle-2">
-              <input type="checkbox" id="final-toggle2" class="final__toggle-2__input" />
-              <span class="final__toggle-2__button">Click me to activate</span>
-            </label>
-
-
-          </section>
-
+    <main id="home">
+      <!-- ============== HERO ============== -->
+      <section class="hero">
+        <div class="container">
+          <p class="eyebrow">AI Agentic Systems Engineer · RAG · LLM Infrastructure</p>
+          <h1>
+            I design and ship <span class="accent">agentic AI systems</span> —
+            from foundation-model training to production LLM agents and retrieval.
+          </h1>
+          <p class="hero-summary">
+            AI/ML engineer with a Master's in Computer Science and 3+ years building
+            production LLM agent systems, RAG pipelines, and enterprise data platforms.
+            I work across the full agentic stack — multi-agent orchestration with
+            LangChain/LangGraph, retrieval-augmented generation, tool-use with guardrails
+            and audit trails — and have hands-on foundation-model experience, including
+            pretraining a large language model for Indic languages on a ~15–20 trillion
+            token corpus.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="resume.pdf" download>↓ Résumé (PDF)</a>
+            <a class="button" href="https://github.com/varshith2000" target="_blank" rel="noreferrer">GitHub ↗</a>
+            <a class="button" href="https://www.linkedin.com/in/varshith-chennuru/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+            <a class="button" href="mailto:chennuruvarshith19@gmail.com">Email</a>
+          </div>
         </div>
-    </div>
+      </section>
 
-    <div class="info">
-      <h2>Information <small>About this lesson</small></h2>
-      <h3>What are we making?</h3>
-      <p>Fun &amp; fancy buttons of all shapes and sizes, made 100% with CSS3!</p>
+      <!-- ============== ABOUT ============== -->
+      <section id="about" class="section">
+        <div class="container">
+          <p class="section-label">01 — About</p>
+          <h2>Engineering AI that holds up in production.</h2>
+          <p class="lede">
+            My work sits at the intersection of software engineering, machine learning,
+            and AI infrastructure. I care about the parts that separate a demo from a
+            product: multi-step agent workflows that track state across turns, retrieval
+            that actually surfaces the right context, guardrails with audit trails and
+            human-in-the-loop approvals, and evaluation that catches failure modes
+            before users do.
+          </p>
+          <p class="lede">
+            Because I've trained and fine-tuned language models myself, I bring a
+            foundation-model perspective to applied agent and RAG work — informing how I
+            think about grounding, evaluation, and the ways these systems fail. I'm fluent
+            across Python, TypeScript/Go, and cloud infrastructure (Azure/AWS/GCP), and I
+            build with CI/CD from day one.
+          </p>
 
-      <h3>Where can I use it?</h3>
-      <p>In your websites and client projects as an appealing UI element.</p>
+          <div class="focus-grid">
+            <div class="focus-item">
+              <h4>Agentic orchestration</h4>
+              <p>Multi-agent systems, tool-use / function calling, stateful multi-turn workflows (LangChain, LangGraph).</p>
+            </div>
+            <div class="focus-item">
+              <h4>RAG &amp; retrieval</h4>
+              <p>Embedding, chunking, hybrid vector + keyword search, reranking, semantic code search.</p>
+            </div>
+            <div class="focus-item">
+              <h4>Foundation models</h4>
+              <p>SLM training/fine-tuning; pretraining a large-scale LLM for Indic languages (~15–20T tokens).</p>
+            </div>
+            <div class="focus-item">
+              <h4>Trust &amp; reliability</h4>
+              <p>Guardrails, audit trails, human-in-the-loop approvals, hallucination mitigation, evaluation.</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-      <h3>How compatible are these styles with major browsers?</h3>
-      <p>Check the CSS3 styles from your stylesheet <a href="http://caniuse.com/">on this website.</a> It allows you to see the compatibility of every CSS style with major browser.</p>
-    </div>
+      <!-- ============== EXPERIENCE ============== -->
+      <section id="work" class="section">
+        <div class="container">
+          <p class="section-label">02 — Experience</p>
+          <h2>Selected roles</h2>
 
-    <footer>
-      <div class="logo">
-        <a href="http://codecollege.ca/" id="logo">
+          <div class="timeline">
+            <article class="tl-item">
+              <div class="tl-head">
+                <h3>Software Developer — AI/ML <span class="org">· EzSCM</span></h3>
+                <span class="tl-date">Apr 2025 – Present</span>
+              </div>
+              <ul class="tl-bullets">
+                <li><b>Generative AI onboarding agent</b> built with <b>LangGraph</b> — orchestrated multi-step, context-aware workflows that <b>cut manual onboarding effort by 70%</b>.</li>
+                <li>Designed agent <b>tool-use and dispatch logic</b> connecting the LLM layer to backend services, with state tracking across multi-turn workflows.</li>
+                <li>Integrated NLP-driven conversational AI into a React frontend — adaptive, intent-aware interfaces that measurably improved engagement.</li>
+                <li>Containerized and deployed scalable ML microservices via <b>Docker &amp; Kubernetes</b>, maintaining <b>99.9% uptime</b> with automated failover.</li>
+              </ul>
+            </article>
 
-          <img src="../_theme-styles/img/bggray.svg" width="60px" id="logo_bg-gray">
-          <img src="../_theme-styles/img/bgyellow.svg" width="60px" id="logo_bg-yellow">
-          <img src="../_theme-styles/img/codecollegelogo.svg" width="60px" id="logo_codecollege">
+            <article class="tl-item">
+              <div class="tl-head">
+                <h3>Software Engineer — ML &amp; Data <span class="org">· Krasan Consulting Services</span></h3>
+                <span class="tl-date">Jun 2024 – Present</span>
+              </div>
+              <ul class="tl-bullets">
+                <li>Architected a <b>Medallion (Bronze→Silver→Gold)</b> migration pipeline on Azure (ADF + Blob + Azure SQL) ingesting 7 SACWIS tables (<b>10M+ records</b>) with row-count validation, Parquet partitioning, automated rollback, and full audit logging.</li>
+                <li>Built Silver-layer cleaning (type casting, dedup flags, <b>SHA-256 SSN hashing</b>, idempotent stored procedures) and Gold-layer MERGE upserts — patterns directly applicable to crash-recovery and audit trails in agentic pipelines.</li>
+                <li><b>ML-powered ATS</b> using Random Forest across <b>2,500+ profiles (~85% precision)</b>, cutting screening time ~30%; automated LLM/VLM parsing of 100+ PDFs at ~95% accuracy via Python + n8n.</li>
+                <li>Created an AI-driven task generator (LangChain + Azure DevOps APIs) that <b>reduced project planning time by 20%</b>; shipped CI/CD pipelines on Azure Pipelines + GitHub Actions.</li>
+              </ul>
+            </article>
 
-          <!-- <img src="../_theme-styles/img/codecollegelogo.png" alt="Learn to Code at CodeCollege.ca" height="60px"> -->
+            <article class="tl-item">
+              <div class="tl-head">
+                <h3>Software Engineer — ML <span class="org">· Hudson Insurance Group</span></h3>
+                <span class="tl-date">Jun 2023 – Apr 2024</span>
+              </div>
+              <ul class="tl-bullets">
+                <li>Built a Python weather prediction model (<b>ARIMA + Random Forest</b>) on ~30 years of NOAA data, <b>reducing insurance pricing errors by 15%</b>; optimized SQL + React dashboards for 45% faster retrieval.</li>
+                <li>Deployed real-time Azure event-logging pipelines, <b>reducing system downtime by 35%</b> in high-stakes production environments.</li>
+              </ul>
+            </article>
 
-        </a>
-      </div>
-      <div class="made-by">
-        Made by <a href="http://bradhussey.ca/">Brad Hussey</a>
-      </div>
-      <div class="course">
-        <a href="http://codecollege.ca/">Code 30 things in 30 days with CSS3</a>
-      </div>
-      <div class="copyright">
-        &copy;2018 Brightside Studios Inc.
-      </div>
+            <article class="tl-item">
+              <div class="tl-head">
+                <h3>Software Engineer <span class="org">· Krushna53, India</span></h3>
+                <span class="tl-date">Apr 2022 – Jul 2022</span>
+              </div>
+              <ul class="tl-bullets">
+                <li>Implemented <b>sentiment analysis and recommendation engines</b> using GraphQL and Python APIs, boosting personalization and engagement by ~25%.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============== PROJECTS ============== -->
+      <section id="projects" class="section">
+        <div class="container">
+          <p class="section-label">03 — Projects</p>
+          <h2>Things I've built</h2>
+          <p class="lede" style="margin-bottom: 1.6rem">
+            A mix of agentic systems, retrieval platforms, foundation-model work, and
+            applied ML — spanning research and production.
+          </p>
+
+          <article class="proj-card">
+            <span class="proj-tag">Foundation Model · Ongoing</span>
+            <div class="proj-head">
+              <h3>Indic-LKM — Large Language Model for Indian Languages &amp; Knowledge</h3>
+              <span class="proj-date">2025 – Present</span>
+            </div>
+            <p class="proj-desc">
+              Pretraining a large-scale language model on a <b>~15–20 trillion token corpus</b>
+              spanning Indic languages and Indian domain knowledge. Owns the full pipeline —
+              data curation, tokenizer design, and training pipeline design. Builds on prior
+              hands-on experience training and fine-tuning smaller language models, applying
+              that foundation-model background to grounding, evaluation, and failure-mode
+              analysis in downstream agent and RAG systems.
+            </p>
+            <div class="stack">
+              <span>Python</span><span>LLM pretraining</span><span>Tokenizer design</span><span>Data curation</span><span>Evaluation</span>
+            </div>
+          </article>
+
+          <article class="proj-card">
+            <span class="proj-tag">Agentic AI · RAG</span>
+            <div class="proj-head">
+              <h3>DevRel Agent — 24/7 AI Developer Relations Platform</h3>
+              <span class="proj-date">Dec 2025 – Apr 2026</span>
+            </div>
+            <p class="proj-desc">
+              A multi-LLM developer support agent (Claude, GPT, Gemini) on FastAPI + Next.js
+              with RAG, <b>FAISS semantic code search</b> (tree-sitter indexing), and incident
+              debugging through a unified platform. Implemented <b>guardrails with
+              human-in-the-loop approvals</b>, complete audit trails for compliance, and
+              automated diagnosis for API latency issues and codebase knowledge discovery.
+            </p>
+            <div class="stack">
+              <span>FastAPI</span><span>Next.js</span><span>LangChain</span><span>FAISS</span><span>tree-sitter</span><span>Multi-LLM</span>
+            </div>
+          </article>
+
+          <article class="proj-card">
+            <span class="proj-tag">Voice AI · Real-time</span>
+            <div class="proj-head">
+              <h3>VoiceAge Platform — AI Customer-Service Voice Agent</h3>
+              <span class="proj-date">Mar 2026 – May 2026</span>
+            </div>
+            <p class="proj-desc">
+              An intelligent phone-automation platform combining Vapi voice infrastructure,
+              OpenAI GPT-4o, and Qdrant vector DB for natural, real-time customer
+              conversations with direct Zammad ticketing. Real-time knowledge-base retrieval
+              via vector embeddings during live calls; a post-call GPT-4o pipeline extracts
+              sentiment/intent and auto-creates enriched tickets with AI-generated tags.
+              Designed a <b>7-collection Qdrant architecture</b> with PII redaction, HMAC
+              webhook auth, input sanitization, and SMS/email follow-up scheduling.
+            </p>
+            <div class="stack">
+              <span>Vapi</span><span>GPT-4o</span><span>Qdrant</span><span>Python</span><span>Zammad</span><span>HMAC webhooks</span>
+            </div>
+          </article>
+
+          <article class="proj-card">
+            <span class="proj-tag">Agents · Browser</span>
+            <div class="proj-head">
+              <h3>Agentic AI Browser Assistant — Chrome Extension</h3>
+              <span class="proj-date">Sep 2025 – Nov 2025</span>
+            </div>
+            <p class="proj-desc">
+              A Chrome extension with autonomous agentic capabilities — deep analysis, web
+              search, email composition, save/bookmark — using <b>Gemini 3072-dimensional
+              embeddings</b> for semantic page indexing and RAG-based retrieval. Enables
+              cross-session browsing memory with intelligent section highlighting,
+              context-aware search, adaptive theming, and export (PDF, text, clipboard).
+            </p>
+            <div class="stack">
+              <span>Chrome Extension</span><span>Gemini</span><span>RAG</span><span>Vector embeddings</span><span>JavaScript</span>
+            </div>
+          </article>
+
+          <article class="proj-card">
+            <span class="proj-tag">Data Engineering · Azure</span>
+            <div class="proj-head">
+              <h3>Medallion Architecture — Legacy Data Migration (Azure ADF)</h3>
+              <span class="proj-date">2024 – 2025</span>
+            </div>
+            <p class="proj-desc">
+              End-to-end Bronze→Silver→Gold pipeline processing 7 SACWIS tables
+              (<b>10M+ records</b>). Silver layer with SHA-256 SSN hashing, dedup flags, and
+              stored-procedure cleaning; Gold MERGE upserts with surrogate keys and a
+              29-entry audit log.
+            </p>
+            <div class="stack">
+              <span>Azure ADF</span><span>Blob Storage</span><span>Azure SQL</span><span>Parquet</span><span>Medallion</span>
+            </div>
+          </article>
+
+          <article class="proj-card">
+            <span class="proj-tag">Applied ML</span>
+            <div class="proj-head">
+              <h3>Breast-Cancer Detection (CNN) &amp; ML-Powered ATS</h3>
+              <span class="proj-date">2023 – 2024</span>
+            </div>
+            <p class="proj-desc">
+              A <b>CNN trained on ~30,000 histology images</b> reaching ~93% accuracy with a
+              25% inference optimization, paired with a Random Forest ATS ranking 2,500+
+              candidate profiles at ~85% precision, deployed as a REST API.
+            </p>
+            <div class="stack">
+              <span>PyTorch / CNN</span><span>Random Forest</span><span>REST API</span><span>Computer Vision</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ============== SKILLS ============== -->
+      <section id="skills" class="section">
+        <div class="container">
+          <p class="section-label">04 — Skills</p>
+          <h2>Toolkit</h2>
+
+          <div class="skill-group">
+            <h4>Agentic AI &amp; LLM Engineering</h4>
+            <p>Multi-agent orchestration · LangChain · LangGraph · tool use / function calling · prompt engineering · context management · hallucination mitigation · guardrails &amp; audit trails · MCP-style tool integrations</p>
+          </div>
+          <div class="skill-group">
+            <h4>RAG &amp; Retrieval</h4>
+            <p>RAG pipeline design · embedding models · chunking strategies · hybrid vector + keyword search · reranking · FAISS · Qdrant · semantic code search (tree-sitter)</p>
+          </div>
+          <div class="skill-group">
+            <h4>Language Model Development</h4>
+            <p>SLM training &amp; fine-tuning · large-scale LLM pretraining (Indic, ~15–20T tokens) · foundation-model architecture &amp; evaluation</p>
+          </div>
+          <div class="skill-group">
+            <h4>Programming</h4>
+            <p>Python · TypeScript / JavaScript · Go · Java · SQL</p>
+          </div>
+          <div class="skill-group">
+            <h4>Web &amp; APIs</h4>
+            <p>FastAPI · REST · GraphQL · React · Next.js · Microservices · WebSockets · n8n</p>
+          </div>
+          <div class="skill-group">
+            <h4>Cloud &amp; MLOps</h4>
+            <p>Azure (ADF, Blob, Pipelines, DevOps) · AWS · GCP · Docker · Kubernetes · CI/CD (Azure Pipelines, GitHub Actions) · Terraform-style IaC</p>
+          </div>
+          <div class="skill-group">
+            <h4>Data Engineering</h4>
+            <p>Medallion Architecture (Bronze/Silver/Gold) · ETL/ELT · Apache Airflow · CDC · Parquet</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============== EDUCATION ============== -->
+      <section class="section">
+        <div class="container">
+          <p class="section-label">05 — Education &amp; Certifications</p>
+          <h2>Background</h2>
+          <div class="split" style="margin-top: 1.2rem">
+            <div>
+              <div class="edu-item">
+                <div class="deg">M.S. Computer Science (Engineering) · GPA 3.67</div>
+                <div class="school">Portland State University</div>
+                <div class="when">Sep 2022 – Jun 2024</div>
+              </div>
+              <div class="edu-item">
+                <div class="deg">B.E. Computer Science · GPA 8.0/10</div>
+                <div class="school">Lendi Institute of Engineering and Technology</div>
+                <div class="when">Jun 2018 – Jul 2022</div>
+              </div>
+            </div>
+            <div>
+              <ul class="cert-list">
+                <li>Google Cloud Professional Data Engineer</li>
+                <li>Google Generative AI Leader</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============== CONTACT ============== -->
+      <section id="contact" class="section">
+        <div class="container contact-box">
+          <p class="section-label">06 — Contact</p>
+          <p class="big">Let's build something.</p>
+          <p style="color: var(--muted)">
+            Open to AI Agentic Engineer, AI Engineer, and SDE / AI Engineer roles.
+          </p>
+          <div class="contact-links">
+            <a href="mailto:chennuruvarshith19@gmail.com">email ↗</a>
+            <a href="https://www.linkedin.com/in/varshith-chennuru/" target="_blank" rel="noreferrer">linkedin ↗</a>
+            <a href="https://github.com/varshith2000" target="_blank" rel="noreferrer">github ↗</a>
+            <a href="resume.pdf" download>résumé ↗</a>
+            <span>Portland, OR</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">© 2026 Varshith Chennuru · built minimal, on purpose</div>
     </footer>
   </body>
 </html>
