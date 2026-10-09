@@ -467,6 +467,23 @@ h3 {
   font-size: 0.82rem;
   font-family: var(--mono);
 }
+.footer-links {
+  margin: 0 0 0.7rem;
+  font-size: 0.86rem;
+}
+.footer-links a {
+  color: var(--accent);
+}
+.footer-disclaimer {
+  max-width: 62ch;
+  margin: 0 auto 0.9rem;
+  color: var(--faint);
+  line-height: 1.6;
+  font-family: var(--sans);
+}
+.footer-copy {
+  margin: 0;
+}
 
 
 /* ---------- Skip link ---------- */
