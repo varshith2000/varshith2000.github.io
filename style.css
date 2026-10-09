@@ -468,6 +468,23 @@ h3 {
   font-family: var(--mono);
 }
 
+
+/* ---------- Skip link ---------- */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 100;
+  background: var(--text);
+  color: var(--bg);
+  padding: 0.6rem 1rem;
+  border-radius: 0 0 8px 0;
+  font-size: 0.9rem;
+}
+.skip-link:focus {
+  left: 0;
+}
+
 /* ---------- Responsive ---------- */
 @media (max-width: 620px) {
   body {
