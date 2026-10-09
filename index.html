@@ -108,10 +108,10 @@
           <p class="hero-summary">
             AI/ML engineer with a Master's in Computer Science and 3+ years building
             production LLM agent systems, RAG pipelines, and enterprise data platforms.
-            I work across the full agentic stack — multi-agent orchestration with
-            LangChain/LangGraph, retrieval-augmented generation, tool-use with guardrails
-            and audit trails — and have hands-on foundation-model experience, including
-            pretraining a large language model for Indic languages on a ~15–20 trillion
+            I work across the full agentic stack: multi-agent orchestration with
+            LangChain and LangGraph, retrieval-augmented generation, and tool-use with
+            guardrails and audit trails. I also have hands-on foundation-model experience.
+            I pretrained a large language model for Indic languages on a ~15–20 trillion
             token corpus.
           </p>
           <div class="hero-actions">
@@ -129,37 +129,38 @@
           <p class="section-label">01 — About</p>
           <h2>Engineering AI that holds up in production.</h2>
           <p class="lede">
-            My work sits at the intersection of software engineering, machine learning,
-            and AI infrastructure. I care about the parts that separate a demo from a
-            product: multi-step agent workflows that track state across turns, retrieval
-            that actually surfaces the right context, guardrails with audit trails and
-            human-in-the-loop approvals, and evaluation that catches failure modes
-            before users do.
+            I engineer AI systems that hold up in production, from the data layer to the
+            agent layer. My work sits at the intersection of software engineering, machine
+            learning, and AI infrastructure. I care about the parts that separate a demo
+            from a product. That means multi-step agent workflows that track state across
+            turns. It means retrieval that surfaces the right context. It means guardrails
+            with audit trails and human-in-the-loop approvals. And it means evaluation
+            that catches failure modes before users do.
           </p>
           <p class="lede">
-            Because I've trained and fine-tuned language models myself, I bring a
-            foundation-model perspective to applied agent and RAG work — informing how I
+            I've trained and fine-tuned language models myself. So I bring a
+            foundation-model perspective to applied agent and RAG work. This shapes how I
             think about grounding, evaluation, and the ways these systems fail. I'm fluent
-            across Python, TypeScript/Go, and cloud infrastructure (Azure/AWS/GCP), and I
-            build with CI/CD from day one.
+            in Python, TypeScript and Go, and in cloud infrastructure on Azure, AWS, and
+            GCP. I build with CI/CD from day one.
           </p>
 
           <div class="focus-grid">
             <div class="focus-item">
-              <h4>Agentic orchestration</h4>
-              <p>Multi-agent systems, tool-use / function calling, stateful multi-turn workflows (LangChain, LangGraph).</p>
+              <h3>Agentic orchestration</h3>
+              <p>I build multi-agent systems with tool-use / function calling and stateful, multi-turn workflows (LangChain, LangGraph).</p>
             </div>
             <div class="focus-item">
-              <h4>RAG &amp; retrieval</h4>
-              <p>Embedding, chunking, hybrid vector + keyword search, reranking, semantic code search.</p>
+              <h3>RAG &amp; retrieval</h3>
+              <p>I build retrieval pipelines with embedding, chunking, hybrid vector + keyword search, reranking, and semantic code search.</p>
             </div>
             <div class="focus-item">
-              <h4>Foundation models</h4>
-              <p>SLM training/fine-tuning; pretraining a large-scale LLM for Indic languages (~15–20T tokens).</p>
+              <h3>Foundation models</h3>
+              <p>I train and fine-tune small language models and pretrain a large-scale LLM for Indic languages (~15–20T tokens).</p>
             </div>
             <div class="focus-item">
-              <h4>Trust &amp; reliability</h4>
-              <p>Guardrails, audit trails, human-in-the-loop approvals, hallucination mitigation, evaluation.</p>
+              <h3>Trust &amp; reliability</h3>
+              <p>I add guardrails, audit trails, human-in-the-loop approvals, hallucination mitigation, and evaluation.</p>
             </div>
           </div>
         </div>
@@ -169,7 +170,11 @@
       <section id="work" class="section">
         <div class="container">
           <p class="section-label">02 — Experience</p>
-          <h2>Selected roles</h2>
+          <h2>Where have I worked?</h2>
+          <p class="lede" style="margin-bottom: 1.4rem">
+            I have held software engineering roles across insurance, consulting, and
+            AI/ML product teams.
+          </p>
 
           <div class="timeline">
             <article class="tl-item">
@@ -179,9 +184,9 @@
               </div>
               <ul class="tl-bullets">
                 <li><b>Generative AI onboarding agent</b> built with <b>LangGraph</b> — orchestrated multi-step, context-aware workflows that <b>cut manual onboarding effort by 70%</b>.</li>
-                <li>Designed agent <b>tool-use and dispatch logic</b> connecting the LLM layer to backend services, with state tracking across multi-turn workflows.</li>
-                <li>Integrated NLP-driven conversational AI into a React frontend — adaptive, intent-aware interfaces that measurably improved engagement.</li>
-                <li>Containerized and deployed scalable ML microservices via <b>Docker &amp; Kubernetes</b>, maintaining <b>99.9% uptime</b> with automated failover.</li>
+                <li>Designed agent <b>tool-use and dispatch logic</b> that connects the LLM layer to backend services. It tracks state across multi-turn workflows.</li>
+                <li>Integrated NLP-driven conversational AI into a React frontend. The adaptive, intent-aware interfaces measurably improved engagement.</li>
+                <li>Containerized and deployed scalable ML microservices via <b>Docker &amp; Kubernetes</b>. The setup holds <b>99.9% uptime</b> with automated failover.</li>
               </ul>
             </article>
 
@@ -191,10 +196,10 @@
                 <span class="tl-date">Jun 2024 – Present</span>
               </div>
               <ul class="tl-bullets">
-                <li>Architected a <b>Medallion (Bronze→Silver→Gold)</b> migration pipeline on Azure (ADF + Blob + Azure SQL) ingesting 7 SACWIS tables (<b>10M+ records</b>) with row-count validation, Parquet partitioning, automated rollback, and full audit logging.</li>
-                <li>Built Silver-layer cleaning (type casting, dedup flags, <b>SHA-256 SSN hashing</b>, idempotent stored procedures) and Gold-layer MERGE upserts — patterns directly applicable to crash-recovery and audit trails in agentic pipelines.</li>
-                <li><b>ML-powered ATS</b> using Random Forest across <b>2,500+ profiles (~85% precision)</b>, cutting screening time ~30%; automated LLM/VLM parsing of 100+ PDFs at ~95% accuracy via Python + n8n.</li>
-                <li>Created an AI-driven task generator (LangChain + Azure DevOps APIs) that <b>reduced project planning time by 20%</b>; shipped CI/CD pipelines on Azure Pipelines + GitHub Actions.</li>
+                <li>Architected a <b>Medallion (Bronze→Silver→Gold)</b> migration pipeline on Azure (ADF + Blob + Azure SQL). It ingests 7 SACWIS tables (<b>10M+ records</b>) with row-count validation, Parquet partitioning, automated rollback, and full audit logging.</li>
+                <li>Built Silver-layer cleaning (type casting, dedup flags, <b>SHA-256 SSN hashing</b>, idempotent stored procedures) and Gold-layer MERGE upserts. These patterns apply directly to crash-recovery and audit trails in agentic pipelines.</li>
+                <li>Built an <b>ML-powered ATS</b> using Random Forest across <b>2,500+ profiles (~85% precision)</b>, cutting screening time ~30%. I automated LLM/VLM parsing of 100+ PDFs at ~95% accuracy via Python + n8n.</li>
+                <li>Created an AI-driven task generator (LangChain + Azure DevOps APIs) that <b>reduced project planning time by 20%</b>. I also shipped CI/CD pipelines on Azure Pipelines + GitHub Actions.</li>
               </ul>
             </article>
 
@@ -204,8 +209,8 @@
                 <span class="tl-date">Jun 2023 – Apr 2024</span>
               </div>
               <ul class="tl-bullets">
-                <li>Built a Python weather prediction model (<b>ARIMA + Random Forest</b>) on ~30 years of NOAA data, <b>reducing insurance pricing errors by 15%</b>; optimized SQL + React dashboards for 45% faster retrieval.</li>
-                <li>Deployed real-time Azure event-logging pipelines, <b>reducing system downtime by 35%</b> in high-stakes production environments.</li>
+                <li>Built a Python weather prediction model (<b>ARIMA + Random Forest</b>) on ~30 years of NOAA data, <b>reducing insurance pricing errors by 15%</b>. I also optimized SQL + React dashboards for 45% faster retrieval.</li>
+                <li>Deployed real-time Azure event-logging pipelines that <b>reduced system downtime by 35%</b> in high-stakes production environments.</li>
               </ul>
             </article>
 
@@ -215,7 +220,7 @@
                 <span class="tl-date">Apr 2022 – Jul 2022</span>
               </div>
               <ul class="tl-bullets">
-                <li>Implemented <b>sentiment analysis and recommendation engines</b> using GraphQL and Python APIs, boosting personalization and engagement by ~25%.</li>
+                <li>Implemented <b>sentiment analysis and recommendation engines</b> using GraphQL and Python APIs. They boosted personalization and engagement by ~25%.</li>
               </ul>
             </article>
           </div>
@@ -226,7 +231,7 @@
       <section id="projects" class="section">
         <div class="container">
           <p class="section-label">03 — Projects</p>
-          <h2>Things I've built</h2>
+          <h2>What have I built?</h2>
           <p class="lede" style="margin-bottom: 1.6rem">
             A mix of agentic systems, retrieval platforms, foundation-model work, and
             applied ML — spanning research and production.
@@ -239,11 +244,11 @@
               <span class="proj-date">2025 – Present</span>
             </div>
             <p class="proj-desc">
-              Pretraining a large-scale language model on a <b>~15–20 trillion token corpus</b>
-              spanning Indic languages and Indian domain knowledge. Owns the full pipeline —
-              data curation, tokenizer design, and training pipeline design. Builds on prior
-              hands-on experience training and fine-tuning smaller language models, applying
-              that foundation-model background to grounding, evaluation, and failure-mode
+              Pretraining a large-scale language model on a <b>~15–20 trillion token corpus</b>.
+              The corpus spans Indic languages and Indian domain knowledge. I own the full
+              pipeline: data curation, tokenizer design, and training pipeline design. This
+              builds on prior hands-on experience training and fine-tuning smaller language
+              models. That background informs grounding, evaluation, and failure-mode
               analysis in downstream agent and RAG systems.
             </p>
             <div class="stack">
@@ -258,11 +263,11 @@
               <span class="proj-date">Dec 2025 – Apr 2026</span>
             </div>
             <p class="proj-desc">
-              A multi-LLM developer support agent (Claude, GPT, Gemini) on FastAPI + Next.js
-              with RAG, <b>FAISS semantic code search</b> (tree-sitter indexing), and incident
-              debugging through a unified platform. Implemented <b>guardrails with
-              human-in-the-loop approvals</b>, complete audit trails for compliance, and
-              automated diagnosis for API latency issues and codebase knowledge discovery.
+              A multi-LLM developer support agent (Claude, GPT, Gemini) on FastAPI and Next.js.
+              It combines RAG, <b>FAISS semantic code search</b> (tree-sitter indexing), and
+              incident debugging in one platform. I implemented <b>guardrails with
+              human-in-the-loop approvals</b> and complete audit trails for compliance. It
+              also automates diagnosis for API latency issues and codebase knowledge discovery.
             </p>
             <div class="stack">
               <span>FastAPI</span><span>Next.js</span><span>LangChain</span><span>FAISS</span><span>tree-sitter</span><span>Multi-LLM</span>
@@ -276,13 +281,14 @@
               <span class="proj-date">Mar 2026 – May 2026</span>
             </div>
             <p class="proj-desc">
-              An intelligent phone-automation platform combining Vapi voice infrastructure,
-              OpenAI GPT-4o, and Qdrant vector DB for natural, real-time customer
-              conversations with direct Zammad ticketing. Real-time knowledge-base retrieval
-              via vector embeddings during live calls; a post-call GPT-4o pipeline extracts
-              sentiment/intent and auto-creates enriched tickets with AI-generated tags.
-              Designed a <b>7-collection Qdrant architecture</b> with PII redaction, HMAC
-              webhook auth, input sanitization, and SMS/email follow-up scheduling.
+              An intelligent phone-automation platform. It combines Vapi voice
+              infrastructure, OpenAI GPT-4o, and the Qdrant vector database. The result is
+              natural, real-time customer conversations with direct Zammad ticketing.
+              Knowledge-base retrieval runs on vector embeddings during live calls. A
+              post-call GPT-4o pipeline extracts sentiment and intent, then auto-creates
+              enriched tickets with AI-generated tags. I designed a
+              <b>7-collection Qdrant architecture</b> with PII redaction, HMAC webhook auth,
+              input sanitization, and SMS/email follow-up scheduling.
             </p>
             <div class="stack">
               <span>Vapi</span><span>GPT-4o</span><span>Qdrant</span><span>Python</span><span>Zammad</span><span>HMAC webhooks</span>
@@ -296,11 +302,12 @@
               <span class="proj-date">Sep 2025 – Nov 2025</span>
             </div>
             <p class="proj-desc">
-              A Chrome extension with autonomous agentic capabilities — deep analysis, web
-              search, email composition, save/bookmark — using <b>Gemini 3072-dimensional
-              embeddings</b> for semantic page indexing and RAG-based retrieval. Enables
-              cross-session browsing memory with intelligent section highlighting,
-              context-aware search, adaptive theming, and export (PDF, text, clipboard).
+              A Chrome extension with autonomous agentic capabilities: deep analysis, web
+              search, email composition, and save/bookmark. It uses <b>Gemini 3072-dimensional
+              embeddings</b> for semantic page indexing and RAG-based retrieval. It enables
+              cross-session browsing memory with intelligent section highlighting and
+              context-aware search. It also supports adaptive theming and export to PDF,
+              text, or clipboard.
             </p>
             <div class="stack">
               <span>Chrome Extension</span><span>Gemini</span><span>RAG</span><span>Vector embeddings</span><span>JavaScript</span>
@@ -315,9 +322,9 @@
             </div>
             <p class="proj-desc">
               End-to-end Bronze→Silver→Gold pipeline processing 7 SACWIS tables
-              (<b>10M+ records</b>). Silver layer with SHA-256 SSN hashing, dedup flags, and
-              stored-procedure cleaning; Gold MERGE upserts with surrogate keys and a
-              29-entry audit log.
+              (<b>10M+ records</b>). The Silver layer uses SHA-256 SSN hashing, dedup flags,
+              and stored-procedure cleaning. The Gold layer uses MERGE upserts with
+              surrogate keys and a 29-entry audit log.
             </p>
             <div class="stack">
               <span>Azure ADF</span><span>Blob Storage</span><span>Azure SQL</span><span>Parquet</span><span>Medallion</span>
@@ -331,9 +338,10 @@
               <span class="proj-date">2023 – 2024</span>
             </div>
             <p class="proj-desc">
-              <b>Developed a Convolutional Neural Network (CNN)</b> for breast cancer histopathology 
-              image classification using <b>~30,000 histology images</b>, achieving <b>~93% classification 
-                accuracy</b> with a <b>25% inference optimization</b>, deployed as a <b>REST API</b>.
+              I <b>built a Convolutional Neural Network (CNN)</b> for breast cancer
+              histopathology image classification. It uses <b>~30,000 histology images</b>. It
+              reaches <b>~93% classification accuracy</b>, with a <b>25% inference speedup</b>.
+              It is deployed as a <b>REST API</b>.
             </p>
             <div class="stack">
               <span>PyTorch / CNN</span><span>Random Forest</span><span>REST API</span><span>Computer Vision</span>
@@ -346,35 +354,39 @@
       <section id="skills" class="section">
         <div class="container">
           <p class="section-label">04 — Skills</p>
-          <h2>Toolkit</h2>
+          <h2>What is in my toolkit?</h2>
+          <p class="lede" style="margin-bottom: 1.4rem">
+            I work across the AI stack, from agent orchestration and retrieval to cloud
+            deployment.
+          </p>
 
           <div class="skill-group">
-            <h4>Agentic AI &amp; LLM Engineering</h4>
-            <p>Multi-agent orchestration · LangChain · LangGraph · tool use / function calling · prompt engineering · context management · hallucination mitigation · guardrails &amp; audit trails · MCP-style tool integrations</p>
+            <h3>Agentic AI &amp; LLM Engineering</h3>
+            <p>I engineer agentic AI and LLM systems end to end. Multi-agent orchestration · LangChain · LangGraph · tool use / function calling · prompt engineering · context management · hallucination mitigation · guardrails &amp; audit trails · MCP-style tool integrations</p>
           </div>
           <div class="skill-group">
-            <h4>RAG &amp; Retrieval</h4>
-            <p>RAG pipeline design · embedding models · chunking strategies · hybrid vector + keyword search · reranking · FAISS · Qdrant · semantic code search (tree-sitter)</p>
+            <h3>RAG &amp; Retrieval</h3>
+            <p>I design retrieval pipelines that surface the right context. RAG pipeline design · embedding models · chunking strategies · hybrid vector + keyword search · reranking · FAISS · Qdrant · semantic code search (tree-sitter)</p>
           </div>
           <div class="skill-group">
-            <h4>Language Model Development</h4>
-            <p>SLM training &amp; fine-tuning · large-scale LLM pretraining (Indic, ~15–20T tokens) · foundation-model architecture &amp; evaluation</p>
+            <h3>Language Model Development</h3>
+            <p>I train, fine-tune, and evaluate language models. SLM training &amp; fine-tuning · large-scale LLM pretraining (Indic, ~15–20T tokens) · foundation-model architecture &amp; evaluation</p>
           </div>
           <div class="skill-group">
-            <h4>Programming</h4>
-            <p>Python · TypeScript / JavaScript · Go · Java · SQL</p>
+            <h3>Programming</h3>
+            <p>I program mainly in Python and TypeScript / JavaScript. Python · TypeScript / JavaScript · Go · Java · SQL</p>
           </div>
           <div class="skill-group">
-            <h4>Web &amp; APIs</h4>
-            <p>FastAPI · REST · GraphQL · React · Next.js · Microservices · WebSockets · n8n</p>
+            <h3>Web &amp; APIs</h3>
+            <p>I build web services, APIs, and interfaces. FastAPI · REST · GraphQL · React · Next.js · Microservices · WebSockets · n8n</p>
           </div>
           <div class="skill-group">
-            <h4>Cloud &amp; MLOps</h4>
-            <p>Azure (ADF, Blob, Pipelines, DevOps) · AWS · GCP · Docker · Kubernetes · CI/CD (Azure Pipelines, GitHub Actions) · Terraform-style IaC</p>
+            <h3>Cloud &amp; MLOps</h3>
+            <p>I deploy and operate machine-learning systems on Azure, AWS, and GCP. Azure (ADF, Blob, Pipelines, DevOps) · AWS · GCP · Docker · Kubernetes · CI/CD (Azure Pipelines, GitHub Actions) · Terraform-style IaC</p>
           </div>
           <div class="skill-group">
-            <h4>Data Engineering</h4>
-            <p>Medallion Architecture (Bronze/Silver/Gold) · ETL/ELT · Apache Airflow · CDC · Parquet</p>
+            <h3>Data Engineering</h3>
+            <p>I build data pipelines on a Medallion architecture. Medallion Architecture (Bronze/Silver/Gold) · ETL/ELT · Apache Airflow · CDC · Parquet</p>
           </div>
         </div>
       </section>
@@ -383,8 +395,11 @@
       <section class="section">
         <div class="container">
           <p class="section-label">05 — Education &amp; Certifications</p>
-          <h2>Background</h2>
-          <div class="split" style="margin-top: 1.2rem">
+          <h2>What is my background?</h2>
+          <p class="lede" style="margin-bottom: 1.2rem">
+            I hold a Master's in Computer Science and two Google Cloud certifications.
+          </p>
+          <div class="split">
             <div>
               <div class="edu-item">
                 <div class="deg">M.S. Computer Science (Engineering) · GPA 3.67</div>
