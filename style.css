@@ -376,6 +376,20 @@ h3 {
   margin: 0.2rem 0 0.8rem;
   font-size: 0.97rem;
 }
+.proj-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem 1rem;
+  margin: 0 0 0.85rem;
+  font-family: var(--mono);
+  font-size: 0.78rem;
+}
+.proj-links a {
+  color: var(--accent);
+}
+.proj-links a:hover {
+  color: var(--text);
+}
 .stack {
   display: flex;
   flex-wrap: wrap;
