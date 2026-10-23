@@ -1,0 +1,22 @@
+# Varshith Chennuru — AI Agentic Systems Engineer
+
+> Varshith Chennuru is an AI/ML engineer who builds production LLM agent systems, RAG pipelines, and enterprise data platforms, and has hands-on foundation-model pretraining experience.
+
+## Primary pages
+
+- [Home](https://varshithchennuru.dev/): Portfolio overview covering agentic AI, retrieval, foundation models, experience, projects, skills, and contact details.
+- [Résumé (PDF)](https://varshithchennuru.dev/resume.pdf): Full CV with roles, dates, and technical stack.
+
+## Core topics
+
+- Agentic AI and multi-agent orchestration (LangChain, LangGraph), tool use, guardrails, and audit trails.
+- Retrieval-augmented generation: embeddings, chunking, hybrid vector and keyword search, reranking, FAISS, and Qdrant.
+- Large language model pretraining and fine-tuning, including an Indic-language LLM on a ~15–20 trillion token corpus.
+- Cloud and MLOps on Azure, AWS, and GCP with Docker, Kubernetes, and CI/CD.
+- Data engineering on a Medallion (Bronze/Silver/Gold) architecture.
+
+## Contact
+
+- Email: chennuruvarshith19@gmail.com
+- LinkedIn: https://www.linkedin.com/in/varshith-chennuru/
+- GitHub: https://github.com/varshith2000
